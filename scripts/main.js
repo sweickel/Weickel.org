@@ -14,6 +14,10 @@ function init() {
       dom("#portfolio").style.flexDirection = "row";
     }
   });
+
+  dom("#send").addEventListener("click", (event) => {
+    alert("This function is coming soon!");
+  });
 }
 
 window.addEventListener("load", (event) => {
