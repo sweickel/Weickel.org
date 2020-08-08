@@ -1,30 +1,152 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><head><link type="text/css" rel="stylesheet" href="style.css"><meta charset="utf-8">
-	<script type="text/javascript" src="main.js"></script>
-		<title>Weickel.org</title>
+<html lang="en" dir="ltr">
+  <head>
+    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <title>Weickel.org</title>
   </head>
 
-<body onresize="resizeTomatoes();">
-  
+  <body>
+    <nav>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#footer">Contact</a>
+      </div>
+    </nav>
 
-  <div class="header">
-  	<img id="tomatoes" src="tomatoes.png" alt="tomatoes">
-    <h1>Weickel.org</h1>
+    <div class="hero">
+      <p>Hello, I'm Sean</p>
+      <p>A Web Developer</p>
+    </div>
 
-    
-</div>
-<hr>
-    <p>Thanks for visiting -<br> There will be some content here soon!</p>
-  
-<!--
-  
-  <h2>About Me</h2>
-  	
-  	 <h3>Skills</h3>
-  	
-  	<h3>Hobbies</h3> 
-  
-  <h2>Portfolio</h2>
-  -->
+    <div class="section-wrapper" id="about">
+      <div class="header">
+        <h3>About Me</h3>
+      </div>
 
-</body></html>
+      <div class="about-sec" id="about_info">
+        <div id="left">
+          <p><b>Name</b>: Sean Weickel</p>
+          <p><b>Location</b>: Michigan, United States</p>
+          <p><b>Age</b>: 32</p>
+        </div>
+
+        <div class="about-sec" id="right">
+          <h4><b>Technologies I Use</b></h4>
+          <p>HTML 5</p>
+          <p>CSS 3</p>
+          <p>Javascript</p>
+          <p>Git/Github</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-wrapper" id="portfolio">
+      <div class="header">
+        <h3>Portfolio</h3>
+        <img id="port-arrow" src="/images/down.png" alt="down_arrow" />
+      </div>
+
+      <div class="wrap-closed" id="port-tiles">
+        <div class="tile">
+          <a href="https://sweickel.github.io/etch-a-sketch/"
+            ><img
+              src="/images/Etch-a-Sketch.png"
+              alt="Screenshot of Etch-a-Sketch JavaScript Project"
+          /></a>
+          <p><b>Etch-a-Sketch</b></p>
+          <div class="tech">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+
+        <div class="tile">
+          <a href="https://sweickel.github.io/calculator/"
+            ><img
+              src="/images/Calculator.png"
+              alt="Screenshot of Calculator JavaScript Project"
+          /></a>
+          <p><b>Calculator</b></p>
+          <div class="tech">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+
+        <div class="tile">
+          <a href="https://sweickel.github.io/Tic-Tac-Toe/"
+            ><img
+              src="/images/Tic-Tac-Toe.png"
+              alt="Screenshot of Tic-Tac-Toe JavaScript Project"
+          /></a>
+          <p><b>Tic-Tac-Toe</b></p>
+          <div class="tech">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+
+        <div class="tile">
+          <a href="https://sweickel.github.io/Library/"
+            ><img
+              src="/images/Library.png"
+              alt="Screenshot of a Library JavaScript Project"
+          /></a>
+          <p><b>Library</b></p>
+          <div class="tech">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="tile">
+          <a href="https://sweickel.github.io/rock-paper-scissors/"
+            ><img
+              src="/images/Rock-Paper-Scissors.png"
+              alt="Screenshot of Rock-Paper-Scissors JavaScript Project"
+          /></a>
+          <p><b>Rock-Paper-Scissors</b></p>
+          <div class="tech">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-wrapper" id="footer">
+      <div class="header">
+        <h3>Contact</h3>
+        <p>Use the form below to get in touch!</p>
+      </div>
+
+      <div id="modal" class="modal-closed">
+        <form action="submit">
+          <div id="modal_inputs">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Send me a message!"
+            ></textarea>
+            <div>
+              <input type="text" id="name" placeholder="Your Name" />
+              <input type="text" id="phone" placeholder="Your Phone Number" />
+              <input type="text" id="email" placeholder="Your Email Address" />
+            </div>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <p>Designed by Sean Weickel 2020</p>
+    </div>
+  </body>
+</html>
